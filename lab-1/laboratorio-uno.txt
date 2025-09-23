@@ -1,0 +1,19 @@
+Ejercicios 6, 8, 13, 15, 25, 26
+
+6. Escribe una función que reciba un número del 1 al 7 y retorne el día de 
+la semana correspondiente (ej. 1 = "Lunes").
+
+8. Escribe una función que reciba tres números y determine si pueden 
+formar un triángulo (la suma de dos lados debe ser mayor que el 
+tercero)
+
+13. Escribe una función que reciba un número y calcule su factorial.
+
+15. Escribe un programa que imprima la tabla de multiplicar de un 
+número dado por el usuario.
+
+25. Escribe un programa que simule un cajero automático. Pide al 
+usuario un monto a retirar y verifica si tiene saldo suficiente.
+
+26. Crea una función que reciba una cadena de texto y cuente la 
+cantidad de vocales que contiene.
