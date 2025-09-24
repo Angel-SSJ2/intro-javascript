@@ -1,18 +1,20 @@
-const readline = require('readline'); // Falta esta línea al inicio del archivo
-
-const rl = readline.createInterface({
-    input: process.stdin,
-    output: process.stdout
-});
-
-rl.question("Ingrese un número para calcular su factorial: ", (respuesta) => {
-    let numero = parseInt(respuesta);
-    let factorial = 1;
-
-    for (let i = 1; i <= numero; i++) {
-        factorial *= i;
+function factorial(numero) {
+    console.log('--- Ejercicio 13: Factorial ---');
+    
+    if (numero < 0) {
+        console.log("El factorial no está definido para números negativos.");
+        return;
     }
 
-    console.log(`El factorial de ${numero} es ${factorial}.`);
-    rl.close();
-});
+    if (numero === 0) {
+        console.log(`El factorial de ${numero} es 1.`);
+        return;
+    }
+
+    let resultado = 1;
+    for (let i = 1; i <= numero; i++) {
+        resultado *= i;
+    }
+
+    console.log(`El factorial de ${numero} es ${resultado}.`);
+}

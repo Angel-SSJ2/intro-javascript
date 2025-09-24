@@ -1,28 +1,20 @@
-const readline = require(`readline`)
 
-const rl = readline.createInterface({
-    input: process.stdin,
-    output: process.stdout
-});
-
-rl.question("Ingrese un número para saber su día de la semana: ", (numero) => {
-    numero = parseInt(numero);
-    if (numero === 1) {
-    console.log("Hoy es Lunes");
-} else if (numero === 2) {
-    console.log("Hoy es Martes");
-} else if (numero === 3) {
-    console.log("Hoy es Miércoles");
-} else if (numero === 4) {
-    console.log("Hoy es Jueves");
-} else if (numero === 5) {
-    console.log("Hoy es Viernes");
-} else if (numero === 6) {
-    console.log("Hoy es Sábado");
-} else if (numero === 7) {
-    console.log("Hoy es Domingo");
-} else {
-    console.log("Número inválido");
+function diaDeLaSemana(num) {
+    const dias = ["Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado", "Domingo"];
+    if (num >= 1 && num <= 7) {
+        return dias[num - 1]; 
+    } else {
+        return "Número inválido";
+    }
 }
-rl.close();
-});
+
+console.log('Ejercicio 6: Día de la semana');
+
+const numeroDelUsuario = prompt('Ingresa un número del 1 al 7:');
+
+const numeroInt = parseInt(numeroDelUsuario);
+
+const dia = diaDeLaSemana(numeroInt);
+
+console.log('El número ingresado fue:', numeroInt);
+console.log('El día de la semana es:', dia);
